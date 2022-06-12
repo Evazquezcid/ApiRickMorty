@@ -1,0 +1,41 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+
+div {
+
+
+
+    margin-top: 10%;
+    height: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Inconsolata', monospace;
+    background-image: url(../../../assets/fotosRick/lunabuena.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    
+   
+   & h2 {
+       font-size: 2rem;
+       border-left: 2px solid black;
+       
+      
+   }
+
+    & p {
+        padding-top: 5%;
+        font-size: 2rem;
+
+    }
+   
+   & img {
+       height: 100%;
+       opacity: 0.60;
+       
+   }
+}

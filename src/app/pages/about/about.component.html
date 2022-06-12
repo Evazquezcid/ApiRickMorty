@@ -1,0 +1,31 @@
+<app-subtitle [text]="'About'"></app-subtitle>
+
+
+
+<div>
+    <div class="formulario">
+    
+    <h2>Registrate aqui y consigue recompensas
+    </h2>
+    
+    <form  novalidate (ngSubmit)="onSubmit()"[formGroup]= "userRegisterForm">
+      
+    <fieldset>
+        <label for="Mail">Mail:</label>
+        <input type="text" id="Mail" formControlName="Mail">
+    </fieldset>
+    <fieldset>
+        <label for="Usuario">Usuario:</label>
+        <input type="text" id="Usuario" formControlName="Usuario">
+    </fieldset>
+    <fieldset>
+        <label for="Contraseña">Contraseña:</label>
+        <input type="text" id="Contraseña" formControlName="Contraseña">
+    </fieldset>
+   
+    <button type="submit" [disabled]="!userRegisterForm.valid">Listo</button>
+    </form>
+    </div>
+</div>
+
+    
