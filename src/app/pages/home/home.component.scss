@@ -1,41 +1,39 @@
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
 
 div {
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+    margin: 5%;
+    text-align: center;
+  }
 
+  margin-top: 5%;
+  height: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Inconsolata", monospace;
+  background-image: url(../../../assets/fotosRick/lunabuena.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 
+  & h2 {
+    font-size: 2rem;
+    border-left: 2px solid black;
+  }
 
-    margin-top: 10%;
-    height: 60vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'Inconsolata', monospace;
-    background-image: url(../../../assets/fotosRick/lunabuena.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  
-    
-   
-   & h2 {
-       font-size: 2rem;
-       border-left: 2px solid black;
-       
-      
-   }
+  & p {
+    padding: 8%;
+    font-size: 2rem;
+    text-align: center;
+  }
 
-    & p {
-        padding-top: 5%;
-        font-size: 2rem;
-
+  & img {
+    @media (max-width: 600px) {
+      height: 170%;
+      width: 170%;
     }
-   
-   & img {
-       height: 100%;
-       opacity: 0.60;
-       
-   }
+    height: 120%;
+    opacity: 0.6;
+  }
 }

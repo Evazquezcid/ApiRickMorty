@@ -1,50 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
-
-
-
-
-.carta{
-    border: 8px solid #ecfa58;
+.carta {
+  @media (max-width: 600px) {
+    font-size: small;
+    margin-left: 15%;
+    width: 70vw;
+    height: 70vw;
     
-    font-family: 'Inconsolata', monospace;
-    display: block;
-    align-items: center;
-    justify-content:space-around;
-    align-items: center;
-    width: 40vw;
-    height: 40vw;
-    background-color: #e5e6d9;
-    background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
-    margin-left: 30%;
-    border-radius: 3%;
+  }
+  border: 8px solid #ecfa58;
 
-    
+  font-family: "Inconsolata", monospace;
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vw;
+  height: 40vw;
+  background-color: #e5e6d9;
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+  margin-left: 30%;
+  border-radius: 3%;
 
+  & h1 {
+    background-color: white;
+  }
 
-    & h1 {
-        background-color: white;
-        
-    }
+  & h2 {
+    background-color: white;
+  }
 
-    & h2 {
-        background-color: white;
-    }
+  & p {
+    background-color: white;
+  }
 
-    & p {
-        background-color: white;
-    }
-
-
-    & img {
-        margin: 5%;
-        border: 5px solid orange;
-        height: 60%;
-        border-radius: 5%;
-    }
-
-
-
-    
+  & img {
+    margin: 5%;
+    border: 5px solid orange;
+    height: 60%;
+    border-radius: 5%;
+  }
 }
